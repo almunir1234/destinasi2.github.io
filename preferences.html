@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Preferensi Wisata</title>
+    <link rel="stylesheet" href="assets/css/main.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+
+    <!--<nav>
+        <div class="logo">WisataIn.</div>
+        <ul>
+            <li><a href="index.html">Beranda</a></li>
+        </ul>
+    </nav>-->
+
+    <div class="pref-container">
+        <header class="pref-header">
+            <h2>Preferensi Wisata</h2>
+            <p>Isi preferensi kamu untuk mendapatkan rekomendasi wisata yang sesuai.</p>
+        </header>
+
+        <form id="prefForm">
+          
+            
+            
+            
+            
+            
+            
+            <div class="form-group">
+                <h3>1. VIBES</h3>
+                <div class="grid-options">
+                
+                 <label class="dna-option">
+                        <input type="radio" name="vibe" value="serenity">
+                        <div class="dna-card">
+                            <i data-lucide="wind" class="dna-icon"></i>
+                            <h3>Serenity</h3>
+                            <p>Ketenangan total sesuai kategori Relaksasi & Alam.</p>
+                        </div>
+                    </label>
+                    <label class="dna-option">
+                        <input type="radio" name="vibe" value="adrenaline">
+                        <div class="dna-card">
+                            <i data-lucide="zap" class="dna-icon"></i>
+                            <h3>Adrenaline</h3>
+                            <p>Eksplorasi liar sesuai kategori Petualangan.</p>
+                        </div>
+                    </label>
+                    <label class="dna-option">
+                        <input type="radio" name="vibe" value="legacy">
+                        <div class="dna-card">
+                            <i data-lucide="landmark" class="dna-icon"></i>
+                            <h3>Legacy</h3>
+                            <p>Ritual kuno sesuai kategori Budaya & Sejarah.</p>
+                        </div>
+                    </label>
+                    <label class="dna-option">
+                        <input type="radio" name="vibe" value="ecstasy">
+                        <div class="dna-card">
+                            <i data-lucide="sparkles" class="dna-icon"></i>
+                            <h3>Ecstasy</h3>
+                            <p>Gaya hidup urban sesuai kategori Kuliner & Belanja.</p>
+                        </div>
+                    </label> 
+                
+                
+                    <!--<label class="option-card">
+                        <input type="radio" name="vibe" value="serenity">
+                        <div class="card-content">
+                            <span class="emoji">🌲</span> <span>Serenity</span>
+                        </div>
+                    </label>
+                    <label class="option-card">
+                        <input type="checkbox" name="vibe" value="adrenaline">
+                        <div class="card-content">
+                            <span class="emoji">🏛️</span> <span>Adrenaline</span>
+                        </div>
+                    </label>
+                    <label class="option-card">
+                        <input type="checkbox" name="vibe" value="legacy">
+                        <div class="card-content">
+                            <span class="emoji">🍜</span> <span>Legacy</span>
+                        </div>
+                    </label>
+                    <label class="option-card">
+                        <input type="checkbox" name="vibe" value="ecstasy">
+                        <div class="card-content">
+                            <span class="emoji"><i data-lucide="sparkles" class="dna-icon"></i></span> <span>Ecstasy</span>
+                        </div>
+                    </label>-->
+                </div>
+            </div>
+
+            <div class="form-group">
+                <h3>2. ELEMENT</h3>
+                <div class="grid-options">
+                
+                 
+                    <label class="dna-option">
+                        <input type="radio" name="element" value="cerulean">
+                        <div class="dna-card">
+                            <i data-lucide="waves" class="dna-icon"></i>
+                            <h3>Cerulean</h3>
+                            <p>Destinasi berbasis Pantai & Maritim.</p>
+                        </div>
+                    </label>
+                    <label class="dna-option">
+                        <input type="radio" name="element" value="emerald">
+                        <div class="dna-card">
+                            <i data-lucide="tree-pine" class="dna-icon"></i>
+                            <h3>Emerald</h3>
+                            <p>Destinasi berbasis Hutan & Alam Liar.</p>
+                        </div>
+                    </label>
+                    <label class="dna-option">
+                        <input type="radio" name="element" value="titan">
+                        <div class="dna-card">
+                            <i data-lucide="mountain" class="dna-icon"></i>
+                            <h3>Titan</h3>
+                            <p>Destinasi berbasis Pegunungan & Dataran Tinggi.</p>
+                        </div>
+                    </label>
+                    <label class="dna-option">
+                        <input type="radio" name="element" value="neon">
+                        <div class="dna-card">
+                            <i data-lucide="building-2" class="dna-icon"></i>
+                            <h3>Neon</h3>
+                            <p>Destinasi berbasis Pusat Kota & Modernitas.</p>
+                        </div>
+                    </label>
+            </div>
+            <br><br>
+            <div class="form-group">
+                <h3>4. Match Range</h3>
+               
+                <div class="precision-control">
+                    <div class="score-display"><span id="match-val">50</span><small>%</small></div>
+                    <input type="range" class="range-primary" min="50" max="100" value="50" id="match-range">
+            </div>
+
+            <div class="form-actions">
+                <button type="submit" id="submit-btn" class="btn-premium-glow btn-full">
+                    Lihat Rekomendasi ✨
+                </button>
+                <br>
+                <button type="reset" class="reset-button btn-reset btn-full">Reset Filter</button>
+            </div>
+
+        </form>
+        
+            <a href="index.html" class="back-link">
+                <i data-lucide="chevron-left"></i> HOME
+            </a>
+    </div>
+
+    <script src="assets/js/store.js"></script>
+    <script src="assets/js/engine.js"></script>
+    <script src="assets/js/main.js"></script>
+<script>
+    lucide.createIcons();
+</script>
+
+</body>
+</html>

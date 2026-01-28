@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Detail Wisata</title>
+    
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Manrope:wght@300;500;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <nav class="detail-nav">
+        <div class="container nav-wrapper">
+            <a href="daftar.html" class="btn-circle back-btn">
+                <i data-lucide="arrow-left"></i>
+            </a>
+            <!--<div class="nav-actions">
+                <button class="btn-circle"><i data-lucide="share-2"></i></button>
+                <button class="btn-circle"><i data-lucide="heart"></i></button>
+            </div>-->
+        </div>
+    </nav>
+
+    <header class="hero-section">
+        <div class="hero-bg-wrapper">
+            <img src="" id="dest-image" alt="Destination View" class="hero-img">
+            <div class="hero-gradient"></div>
+        </div>
+
+        <div class="container hero-content">
+            <div class="hero-meta fade-in-up">
+                <span class="location-tag">
+                    <i data-lucide="map-pin"></i> <span id="dest-location">Loading Location...</span>
+                </span>
+                <div class="match-score-pill">
+                    <i class="fa-solid fa-bolt text-primary"></i> <span id="dest-match">0</span>% Soul Match
+                </div>
+            </div>
+            
+            <h1 class="dest-title fade-in-up delay-1" id="dest-title">LOADING DATA...</h1>
+            
+            <div class="tags-wrapper fade-in-up delay-2" id="dest-categories">
+                <span class="tag-skeleton"></span>
+                <span class="tag-skeleton"></span>
+            </div>
+        </div>
+    </header>
+
+    <main class="container content-grid">
+        
+        <article class="main-column">
+            
+            <section class="info-block fade-in-up delay-3">
+                <h2 class="section-heading">The Narrative</h2>
+                <p class="desc-text" id="dest-description">
+                    Menghubungkan ke Neural Network untuk mengambil data deskripsi...
+                </p>
+            </section>
+
+            <section class="info-block fade-in-up delay-4">
+                <h2 class="section-heading">Curated Activities</h2>
+                <div class="activity-list" id="dest-activities">
+                    </div>
+            </section>
+
+            <section class="info-block fade-in-up delay-5">
+                <div class="match-analysis-card">
+                    <div class="chart-box">
+                        <svg viewBox="0 0 36 36" class="circular-chart">
+                            <path class="circle-bg" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" />
+                            <path class="circle" id="score-circle" stroke-dasharray="0, 100" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" />
+                        </svg>
+                        <i data-lucide="fingerprint" class="chart-icon"></i>
+                    </div>
+                    <div class="chart-info">
+                        <h3>AI Resonance Analysis</h3>
+                        <p>Destinasi ini memiliki frekuensi yang selaras dengan DNA perjalanan Anda.</p>
+                    </div>
+                </div>
+            </section>
+            
+             <section class="info-block fade-in-up delay-5">
+                <div class="map-header-row">
+                    <h2 class="section-heading" style="margin-bottom:0">Location Intel</h2>
+                    <a href="#" id="btn-open-maps" target="_blank" class="btn-text-primary">
+                        Open Real GPS <i data-lucide="external-link"></i>
+                    </a>
+                </div>
+                
+                <div class="map-container">
+                    <iframe id="gmap-canvas" 
+                        src="" 
+                        frameborder="0" 
+                        scrolling="no" 
+                        marginheight="0" 
+                        marginwidth="0">
+                    </iframe>
+                    <div class="map-overlay"></div> </div>
+                <p class="map-address">
+                    <i data-lucide="navigation"></i> 
+                    <span id="dest-address-text">Mendeteksi koordinat satelit...</span>
+                </p>
+            </section>
+
+        </article>
+
+        <aside class="side-column">
+            
+            <div class="booking-card fade-in-up delay-3">
+                <span class="label">Estimated Cost</span>
+                <h2 class="price-tag" id="dest-price">Rp 0</h2>
+                <p class="disclaimer">*Harga rata-rata per orang, dapat berubah sewaktu-waktu.</p>
+                <!--<button class="btn-book">
+                    Start Journey <i data-lucide="arrow-right"></i>
+                </button>-->
+            </div>
+
+            <div class="similar-section fade-in-up delay-4">
+                <h3 class="side-heading">Similar Vibrations</h3>
+                <div class="similar-grid" id="similar-grid">
+                    </div>
+            </div>
+
+        </aside>
+
+    </main>
+
+    <footer class="detail-footer">
+        <p>Kelompok 1<span class="text-primary"> SI503 - Kecerdasan Buatan</span> &copy; 2026</p>
+    </footer>
+
+    <script>
+        lucide.createIcons();
+        
+        document.addEventListener('DOMContentLoaded', () => {
+    const urlParams = new URLSearchParams(window.location.search);
+    const fromPage = urlParams.get('from');
+    const backBtn = document.querySelector('.back-btn'); // Sesuaikan dengan class tombol back kamu
+
+    if (backBtn) {
+        if (fromPage === 'index') {
+            // Jika dari index, arahkan balik ke section collection di index
+            backBtn.href = 'index.html#collection';
+        } else {
+            // Jika dari daftar atau tidak ada parameter, arahkan ke daftar
+            backBtn.href = 'daftar.html';
+        }
+    }
+});
+
+    </script>
+    <script src="assets/js/store.js"></script>
+    <script src="assets/js/engine.js"></script>
+    <script src="assets/js/main.js"></script>
+
+</body>
+</html>

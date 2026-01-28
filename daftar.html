@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Daftar Wisata</title>
+    
+    <link rel="stylesheet" href="assets/css/main.css"> <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Manrope:wght@300;500;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div class="noise-overlay"></div>
+    <div class="ambient-glow top"></div>
+    <div class="ambient-glow bottom"></div>
+
+    <nav class="nav-glass">
+        <div class="container btn-full nav-wrapper">
+            <a href="preferences.html" class="nav-back">
+                <i data-lucide="dna"></i> Preferensi
+            </a>
+            <!--<div class="nav-brand">
+                TRAVEL<span class="text-gold">AI</span>
+            </div>-->
+            <div class="nav-meta">
+                <span class="meta-label">Matches Found</span>
+                <span class="meta-count" id="total-match">0</span>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container showroom">
+        
+        <header class="showroom-header">
+            <div class="header-content">
+                <span class="badge-ai">AI ANALYSIS COMPLETE</span>
+                <h1 class="page-title">REKOMENDASI<span class="text-gradient"> UNTUK KAMU.</span></h1>
+                <p class="page-desc">
+                    Berikut ini adalah rekomendasi destination's yang cocok dengan preferensi milik kamu.
+                </p>
+            </div>
+        </header>
+
+        <div class="card-grid" id="results-grid">
+            
+            <!--<div class="card-skeleton">
+                <div class="sk-img"></div>
+                <div class="sk-content">
+                    <div class="sk-line w-50"></div>
+                    <div class="sk-line w-80"></div>
+                    <div class="sk-line w-40"></div>
+                </div>
+            </div>
+            <div class="card-skeleton">
+                <div class="sk-img"></div>
+                <div class="sk-content">
+                    <div class="sk-line w-50"></div>
+                    <div class="sk-line w-80"></div>
+                    <div class="sk-line w-40"></div>
+                </div>
+            </div>
+            <div class="card-skeleton">
+                <div class="sk-img"></div>
+                <div class="sk-content">
+                    <div class="sk-line w-50"></div>
+                    <div class="sk-line w-80"></div>
+                    <div class="sk-line w-40"></div>
+                </div>
+            </div>
+            <div class="card-skeleton desktop-only">
+                <div class="sk-img"></div>
+                <div class="sk-content">
+                    <div class="sk-line w-50"></div>
+                    <div class="sk-line w-80"></div>
+                    <div class="sk-line w-40"></div>
+                </div>
+            </div>-->
+
+        </div>
+
+        <div class="end-mark">
+            <i class="fa-solid fa-gem"></i>
+            <p>End of Curated List</p>
+        </div>
+
+    </main>
+
+    <div class="floating-orb">
+        <i data-lucide="sliders-horizontal"></i>
+    </div>
+
+    <script>
+        lucide.createIcons();
+    </script>
+
+    <script src="assets/js/store.js"></script>
+    <script src="assets/js/engine.js"></script>
+    <script src="assets/js/main.js"></script>
+
+</body>
+</html>
