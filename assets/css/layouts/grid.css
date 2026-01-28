@@ -1,0 +1,73 @@
+/* =========================================
+   GRID LAYOUTS
+   ========================================= */
+
+/* CARD GRID (Halaman Daftar) */
+.card-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    gap: 2.5rem;
+    padding-bottom: 8rem;
+}
+
+/* CONTENT GRID (Halaman Detail) */
+.content-grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 4rem;
+    padding-top: 4rem;
+    padding-bottom: 6rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+}
+
+/* HERO CONTAINER (Halaman Index) */
+.hero-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    align-items: center;
+    width: 100%;
+    max-width: 1400px;
+    margin: 50px auto;
+}
+
+/* SIDE COLUMN (Sticky) */
+.side-column {
+    position: sticky;
+    top: 2rem;
+    align-self: start;
+}
+
+/* RESPONSIVE GRIDS */
+@media (max-width: 900px) {
+    .content-grid {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+    
+    .side-column {
+        position: static;
+    }
+}
+
+@media (max-width: 768px) {
+    .hero-container {
+        grid-template-columns: 1fr;
+        gap: 40px;
+        text-align: center;
+    }
+    
+    .card-grid {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .grid-options.col-3 {
+        grid-template-columns: 1fr;
+    }
+}
