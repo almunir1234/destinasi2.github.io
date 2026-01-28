@@ -1,0 +1,53 @@
+/* =========================================
+   INDEX PAGE SPECIFIC STYLES
+   ========================================= */
+
+#body-index {
+    background-color: #f8fbf;
+    overflow-x: hidden;
+}
+
+/* RESPONSIVE HERO */
+@media (max-width: 968px) {
+    .hero-creative {
+        padding-top: 100px;
+        padding-bottom: 50px;
+    }
+    
+    .visual-box {
+        height: 400px;
+        width: 100%;
+        max-width: 400px;
+        margin: 0 auto;
+        order: -1;
+    }
+    
+    .card-tall {
+        right: 20px;
+        width: 180px;
+        height: 280px;
+    }
+    
+    .card-wide {
+        left: 10px;
+        width: 220px;
+        height: 160px;
+    }
+    
+    .card-small {
+        left: 40px;
+        bottom: 20px;
+        width: 140px;
+        height: 140px;
+    }
+    
+    .content-box h1{
+    font-size:3rem;
+    }
+}
+
+/* COLLECTION SECTION (jika ada di index) */
+#collection {
+    padding: var(--space-xl) 0;
+    background: var(--bg-body);
+}
