@@ -1,0 +1,192 @@
+/* =========================================
+   BUTTON COMPONENTS
+   ========================================= */
+
+/* BASE BUTTON */
+.btn {
+    padding: var(--space-sm) var(--space-lg);
+    border-radius: var(--radius-md);
+    font-weight: 600;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: var(--transition-base);
+    border: none;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: var(--space-xs);
+    text-decoration: none;
+}
+
+.btn-reset {
+    text-decoration: none;
+    color: inherit;
+    transition: var(--transition-base);
+    background: transparent;
+    border: none;
+}
+
+.btn-reset:hover {
+    color: var(--primary-dark);
+}
+
+/* PRIMARY BUTTON */
+.btn-primary {
+    background-color: var(--primary);
+    color: var(--bg-white);
+    box-shadow: var(--shadow-glow);
+}
+
+.btn-primary:hover {
+    background-color: var(--primary-dark);
+    transform: translateY(-3px);
+    box-shadow: 0 15px 30px rgba(9, 132, 227, 0.4);
+}
+
+/* SECONDARY BUTTON */
+.btn-secondary {
+    background-color: transparent;
+    color: var(--primary);
+    border: 2px solid var(--primary);
+}
+
+.btn-secondary:hover {
+    background-color: var(--primary);
+    color: var(--bg-white);
+}
+
+/* ACCENT BUTTON */
+.btn-accent {
+    background-color: var(--accent);
+    color: var(--bg-white);
+}
+
+.btn-accent:hover {
+    background-color: var(--accent-dark);
+}
+
+/* GLOW BUTTON */
+.btn-premium-glow {
+    background: linear-gradient(45deg, var(--primary), var(--accent));
+    color: var(--bg-white);
+    padding: 15px 35px;
+    border-radius: 12px;
+    font-weight: 700;
+    box-shadow: var(--shadow-glow);
+}
+
+.btn-premium-glow:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 15px 35px rgba(9, 132, 227, 0.4);
+}
+
+/* CIRCLE BUTTON */
+.btn-circle {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.3);
+    border: 1px solid var(--primary);
+    color: var(--text-main);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    backdrop-filter: blur(10px);
+    cursor: pointer;
+    transition: var(--transition-base);
+    text-decoration: none;
+}
+
+.btn-circle:hover {
+    background: var(--bg-white);
+    color: var(--primary-dark);
+    transform: scale(1.1);
+}
+
+/* TEXT BUTTON */
+.btn-text-primary {
+    font-size: 0.8rem;
+    color: var(--primary);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.btn-text-primary:hover {
+    color: var(--primary-dark);
+    text-decoration: underline;
+}
+
+/* EXPLORE BUTTON */
+.btn-explore-deeper {
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid var(--primary);
+    color: var(--primary);
+    padding: 1rem 3rem;
+    border-radius: var(--radius-lg);
+    font-family: var(--font-head);
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    cursor: pointer;
+    transition: all 0.4s ease;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.btn-explore-deeper:hover {
+    background: var(--primary);
+    color: var(--bg-white);
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(212, 175, 55, 0.2);
+}
+
+/* BOOK BUTTON */
+.btn-book {
+    width: 100%;
+    padding: 1rem;
+    border-radius: var(--radius-lg);
+    border: none;
+    background: var(--primary);
+    color: var(--midnight);
+    font-weight: 800;
+    font-family: var(--font-head);
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    transition: var(--transition-base);
+}
+
+.btn-book:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(212, 175, 55, 0.3);
+}
+
+/* BUTTON SIZES */
+.btn-sm {
+    padding: var(--space-xs) var(--space-md);
+    font-size: 0.875rem;
+}
+
+.btn-lg {
+    padding: var(--space-md) var(--space-xl);
+    font-size: 1.125rem;
+}
+
+/* FULL WIDTH */
+.btn-full {
+    width: 100%;
+    text-align: center;
+}
+
+/* DISABLED STATE */
+.btn:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+    pointer-events: none;
+}

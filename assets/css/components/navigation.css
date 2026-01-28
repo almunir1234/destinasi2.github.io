@@ -1,0 +1,148 @@
+/* =========================================
+   NAVIGATION COMPONENTS
+   ========================================= */
+
+/* GLASS NAVIGATION (Halaman Daftar) */
+.nav-glass {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    padding: 1.2rem 0;
+    background: var(--bg-white);
+    backdrop-filter: blur(20px);
+    border-bottom: 1px solid var(--border);
+    transition: var(--transition-base);
+}
+
+.nav-glass .nav-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-brand {
+    font-family: var(--font-head);
+    font-size: 1.5rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+    color: var(--bg-white);
+}
+
+.nav-back {
+    font-size: 0.75rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: var(--text-muted);
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    transition: var(--transition-base);
+}
+
+.nav-back:hover {
+    color: var(--primary-dark);
+}
+
+.nav-meta {
+    text-align: right;
+}
+
+.meta-label {
+    display: block;
+    font-size: 0.6rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: var(--text-muted);
+}
+
+.meta-count {
+    font-family: var(--font-head);
+    font-size: 1.2rem;
+    color: var(--primary);
+}
+
+/* DETAIL NAVIGATION */
+.detail-nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 100;
+    padding: 1rem 0;
+    pointer-events: none;
+    background-color: transparent;
+    /*border:1px solid red;*/
+}
+
+.detail-nav .nav-wrapper {
+    pointer-events: auto;
+   /* border:1px solid red;*/
+    margin-left:0px;
+    padding:0 2px;
+}
+
+.nav-actions {
+    display: flex;
+    gap: 1rem;
+}
+
+/* CREATIVE NAVIGATION (Halaman Index) */
+.nav-creative {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 25px 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 50;
+}
+
+.nav-creative .logo {
+    font-size: 1.8rem;
+    font-weight: 800;
+    color: var(--text-main);
+}
+
+.accent-dot {
+    color: var(--accent);
+}
+
+/* BASE NAVIGATION (Halaman Preferences) */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 8%;
+    background: var(--bg-white);
+    box-shadow: var(--shadow-sm);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 100;
+}
+
+nav .logo {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--primary);
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--text-main);
+    font-weight: 500;
+    transition: var(--transition-base);
+}
+
+nav a:hover {
+    color: var(--primary);
+}
