@@ -1,0 +1,76 @@
+/* =========================================
+   RESET & BASE STYLES
+   ========================================= */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-tap-highlight-color: transparent;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: var(--bg-body);
+    color: var(--text-main);
+    font-family: var(--font-body);
+    overflow-x: hidden;
+    min-height: 100vh;
+    line-height: 1.6;
+}
+
+/* TYPOGRAPHY */
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-head);
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+h1 { font-size: clamp(2.5rem, 6vw, 4.5rem); }
+h2 { font-size: clamp(1.8rem, 4vw, 2.5rem); }
+h3 { font-size: clamp(1.3rem, 3vw, 1.8rem); }
+
+p { margin-bottom: var(--space-md); }
+
+/* LINKS */
+a {
+    text-decoration: none;
+    color: inherit;
+    transition: var(--transition-base);
+}
+
+a:hover {
+    color: var(--primary-dark);
+}
+
+/* IMAGES */
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* LISTS */
+ul, ol {
+    list-style-position: inside;
+}
+
+/* CONTAINER UTILITY */
+.container {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 var(--space-md);
+}
+
+.container-sm {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 var(--space-md);
+}
+
+/* SECTION SPACING */
+section {
+    padding: var(--space-xl) 0;
+}
