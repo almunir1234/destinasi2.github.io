@@ -1,0 +1,197 @@
+/* =========================================
+   HERO SECTIONS
+   ========================================= */
+
+/* CREATIVE HERO (Halaman Index) */
+.hero-creative {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    position: relative;
+    padding: 0 5%;
+    padding-top: 60px;
+    overflow: hidden;
+}
+
+.content-box {
+    z-index: 10;
+}
+
+.hero-creative h1 {
+    font-size: 3.8rem;
+    line-height: 1.2;
+    font-weight: 800;
+    color: var(--text-main);
+    margin-bottom: 25px;
+    letter-spacing: -1px;
+}
+
+.hero-subtext {
+    font-size: 1.1rem;
+    color: var(--text-muted);
+    line-height: 1.8;
+    max-width: 480px;
+    margin-bottom: 35px;
+}
+
+.badge-pill {
+    display: inline-block;
+    background: rgba(9, 132, 227, 0.1);
+    color: var(--primary);
+    padding: 8px 18px;
+    border-radius: var(--radius-lg);
+    font-weight: 600;
+    font-size: 0.85rem;
+    margin-bottom: 20px;
+}
+
+.cta-wrapper {
+    margin-top: var(--space-lg);
+}
+
+.visual-box {
+    position: relative;
+    height: 600px;
+    width: 100%;
+}
+
+.dots-deco {
+    position: absolute;
+    right: 50px;
+    bottom: 80px;
+    width: 100px;
+    height: 100px;
+    background-image: radial-gradient(#dfe6e9 2px, transparent 2px);
+    background-size: 10px 10px;
+    z-index: 0;
+}
+
+/* DETAIL HERO SECTION */
+.hero-section {
+    position: relative;
+    height: 75vh;
+    display: flex;
+    align-items: flex-end;
+    padding-bottom: 4rem;
+    overflow: hidden;
+}
+
+.hero-bg-wrapper {
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+}
+
+.hero-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.hero-gradient {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to top, var(--bg-body) 10%, rgba(2, 4, 8, 0.4) 50%, rgba(2, 4, 8, 0.2) 100%);
+}
+
+.hero-content {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+    position: relative;
+    z-index: 2;
+}
+
+.hero-meta {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    margin-bottom: 1rem;
+    flex-wrap: wrap;
+}
+
+.location-tag {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 0.9rem;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: var(--primary);
+    background: rgba(255, 255, 255, 0.1);
+    padding: 8px 16px;
+    border-radius: var(--radius-lg);
+    backdrop-filter: blur(5px);
+    border: 1px solid var(--primary);
+}
+
+.match-score-pill {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 0.9rem;
+    font-weight: 700;
+    color: var(--primary);
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid var(--primary);
+    padding: 8px 16px;
+    border-radius: var(--radius-lg);
+    backdrop-filter: blur(5px);
+}
+
+.dest-title {
+    font-family: var(--font-head);
+    font-size: clamp(2.5rem, 5vw, 4.5rem);
+    line-height: 1.1;
+    margin-bottom: 1.5rem;
+    text-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+}
+
+/* SHOWROOM HEADER (Halaman Daftar) */
+.showroom-header {
+    padding: 6rem 0 4rem;
+    text-align: center;
+    position: relative;
+}
+
+.badge-ai {
+    display: inline-block;
+    font-size: 0.65rem;
+    font-weight: 800;
+    letter-spacing: 3px;
+    color: var(--text-main);
+    border: 1px solid var(--primary-dark);
+    padding: 8px 16px;
+    border-radius: var(--radius-lg);
+    margin-bottom: 1.5rem;
+    background: var(--bg-white);
+}
+
+.page-title {
+    font-family: var(--font-head);
+    font-size: clamp(2.5rem, 6vw, 4.5rem);
+    margin-bottom: 1.5rem;
+    line-height: 1.1;
+}
+
+.page-desc {
+    font-size: 1rem;
+    color: var(--text-muted);
+    max-width: 600px;
+    margin: 0 auto;
+    line-height: 1.8;
+}
+
+/* PREFERENCES HEADER */
+.pref-header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.pref-header h2 {
+    font-size: 2rem;
+    color: var(--text-main);
+    margin-bottom: 10px;
+                     }
