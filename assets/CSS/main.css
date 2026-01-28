@@ -1,0 +1,25 @@
+/* =========================================
+   MAIN CSS ENTRY POINT
+   Import semua file CSS dengan urutan yang benar
+   ========================================= */
+
+/* CORE FOUNDATION */
+@import url('core/variables.css');
+@import url('core/reset.css');
+@import url('core/utilities.css');
+
+/* REUSABLE COMPONENTS */
+@import url('components/buttons.css');
+@import url('components/cards.css');
+@import url('components/navigation.css');
+@import url('components/forms.css');
+
+/* LAYOUT SYSTEMS */
+@import url('layouts/grid.css');
+@import url('layouts/hero.css');
+
+/* PAGE SPECIFIC STYLES */
+@import url('pages/index.css');
+@import url('pages/preferences.css');
+@import url('pages/daftar.css');
+@import url('pages/detail.css');
