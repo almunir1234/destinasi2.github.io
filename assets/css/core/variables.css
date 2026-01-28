@@ -1,0 +1,84 @@
+/* =========================================
+   DESIGN TOKENS & VARIABLES (Single Source of Truth)
+   ========================================= */
+:root {
+    /* WARNA UTAMA - Blue Theme */
+    --primary: #0984E3;       /* Bright Blue */
+    --primary-dark: #0769b5;  /* Darker for Hover */
+    --primary-light: #74B9FF; /* Light Blue */
+    --accent: #00b894;        /* Teal/Cyan */
+    --accent-dark: #00a085;
+    
+    /* WARNA NETRAL */
+    --bg-body: #F0F4F8;       /* Cool Grey/White */
+    --bg-white: #ffffff;
+    --bg-dark: #0a0f18;
+    --text-main: #2C3E50;     /* Navy Blue Gelap */
+    --text-muted: #636e72;    /* Abu-abu */
+    --text-light: #8b9bb4;
+    --border: rgba(255, 255, 255, 0.08);
+    --glass: rgba(2, 4, 8, 0.85);
+    
+    /* WARNA TEMA DARK (untuk halaman daftar & detail) */
+    --midnight: #020408;
+    --dark-panel: #0a0f18;
+    --gold: #D4AF37;
+    --gold-light: #F2D06B;
+    
+    /* GRADIENTS */
+    --gold-gradient: linear-gradient(135deg, #D4AF37 0%, #F9E29B 50%, #B8860B 100%);
+    --primary-gradient: linear-gradient(45deg, #0984E3 0%, #74B9FF 100%);
+    --accent-gradient: linear-gradient(to top, #00b894 0%, #55efc4 100%);
+    
+    /* TYPOGRAPHY */
+    --font-head: 'Cinzel', serif;
+    --font-body: 'Manrope', sans-serif;
+    --font-poppins: 'Poppins', sans-serif;
+    
+    /* SPACING */
+    --space-xs: 0.5rem;
+    --space-sm: 1rem;
+    --space-md: 1.5rem;
+    --space-lg: 2rem;
+    --space-xl: 3rem;
+    
+    /* BORDER RADIUS */
+    --radius-sm: 10px;
+    --radius-md: 20px;
+    --radius-lg: 50px;
+    
+    /* TRANSITIONS */
+    --transition-fast: 0.2s ease;
+    --transition-base: 0.3s ease;
+    --transition-slow: 0.5s cubic-bezier(0.23, 1, 0.32, 1);
+    
+    /* SHADOWS */
+    --shadow-sm: 0 4px 20px rgba(9, 132, 227, 0.08);
+    --shadow-md: 0 10px 30px rgba(0, 0, 0, 0.1);
+    --shadow-lg: 0 20px 50px rgba(0, 0, 0, 0.3);
+    --shadow-glow: 0 10px 25px rgba(9, 132, 227, 0.3);
+}
+
+/* UTILITY CLASSES BERDASARKAN VARIABEL */
+.text-primary { color: var(--primary); }
+.text-accent { color: var(--accent); }
+.text-muted { color: var(--text-muted); }
+.text-white { color: var(--bg-white); }
+
+.bg-primary { background-color: var(--primary); }
+.bg-accent { background-color: var(--accent); }
+.bg-body { background-color: var(--bg-body); }
+.bg-white { background-color: var(--bg-white); }
+.bg-dark { background-color: var(--dark-panel); }
+
+.border-primary { border-color: var(--primary); }
+.border-accent { border-color: var(--accent); }
+
+.font-head { font-family: var(--font-head); }
+.font-body { font-family: var(--font-body); }
+
+.rounded-md { border-radius: var(--radius-md); }
+.rounded-lg { border-radius: var(--radius-lg); }
+
+.shadow-md { box-shadow: var(--shadow-md); }
+.shadow-glow { box-shadow: var(--shadow-glow); }
